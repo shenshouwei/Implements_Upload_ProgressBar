@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value="action,c,php,asp,abc,do"></constant>
+	<!-- 配置文件的上传大小。 -->
+	<constant name="struts.multipart.maxSize" value="2097152000"></constant>
+	
+	<package name="fileUpload" extends="struts-default" namespace="/">
+		<action name="uploadAction" class="org.ssgroup.action.UploadAction" method="uploadImage"></action>
+	</package>
+</struts>
